@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-*{
+header, nav, section, footer{
     height: 90px;
 }
 
