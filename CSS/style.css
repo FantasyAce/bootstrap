@@ -1,0 +1,17 @@
+body{
+    background-color: lightgrey;
+}
+
+.message{
+    border-radius: 10px;
+    
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact{
+border: goldenrod solid 5px;
+}
