@@ -11,89 +11,106 @@
 
 <body>
 
-    <header>
-        <div id="logo">
-            <img src="./asset/img/fast-banana.png" alt="Logo"
-            onerror="this.src= './asset/img/default-logo.png'">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Header -->
+            <header class="col-12">
+                <div class="row">
+
+                    <div id="logo" class="col-md-4">
+                        <img src="./asset/img/fast-banana.png" alt="Logo"
+                        onerror="this.src= './asset/img/default-logo.png'">
+                    </div>
+                    <nav class="col-md-8">
+                    <div>
+                        <a href="#">Acceuil</a>
+                        <a href="#presentation">Presentation</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <nav>
+                </div>
+            </header>
         </div>
-        <nav>
+        <div class="row">
+            <!-- MAIN -->
+            <main class="offset-md-1 col-10">
+                <section class="row"  id="carousel">
+                </section>
+                <section class="row"  id=" presentation">
+                    <h1 class="col-md-6 text-center">Qui somme nous</h1>
+                    <p class="col-md-6">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias vel consequatur libero porro quasi voluptatibus? Amet, numquam distinctio. Illum expedita voluptatum fugit earum praesentium voluptatibus animi sed amet itaque modi?
+                    </p>
+                </section>
+                <section  class="row" id="services">
+                    <h1 class="col-12 text-center">Nos Prestations</h1>
+                    <table class="col-12">
+                        <tr>
+                            <th>Nos Salades</th>
+                            <th>Nos Boissons</th>
+                            <th>Nos Oignons</th>
+                        </tr>
+                        <tr>
+                            <td>Salade du Chef</td>
+                            <td>Spitfire</td>
+                            <td>Oignons de chez Mamie</td>
+                        </tr>
+                        <tr>
+                            <td>La César</td>
+                            <td>Vodka bio</td>
+                            <td>Oignons frit</td>
+                        </tr>
+                        <tr>
+                            <td>Salade chevre chaud</td>
+                            <td>Sans alcool</td>
+                            <td>Oignons Rouge</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="row"  id="contact">
+                    <h1 class="col-12 text-center">Nous Contacter</h1>
+                    <p class="col-12">
+                        <form action="#confirm" method="GET">
+                            <fieldset>
+                                <legend>Informations</legend>
+                                <label>Nom:
+                                    <input type=" text" placeholder="Votre Nom">
+                                </label>
+                                <label>
+                                    Prénom:
+                                    <input type="text" placeholder="Voter Prénom">
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Messages</legend>
+                                <label>Sujet du message</label>
+                                <input type="text" placeholder="Sujet de votre message">
+                                <label >Votre Message</label>
+                                <textarea placeholder="Votre Message" cols="30" rows="10"></textarea>
+                            </fieldset>
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </p>
+                </section>
+                
+            </main>
+        </div>
+      
+        <div class="row">
+            <!-- FOOTER -->
+            <footer class="col-12 text-center ">
+                <hr>
+                <p>
+                    &copy; Akzel Axel -2019
+                </p>
+            </footer>            
         <div>
-            <a href="#">Acceuil</a>
-            <a href="#presentation">Presentation</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <nav>
-    </header>
+            
+    </div>
 
-    <main>
-        <section id="carousel">
-        </section>
-        <section id="presentation">
-            <h1>Qui somme nous</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias vel consequatur libero porro quasi voluptatibus? Amet, numquam distinctio. Illum expedita voluptatum fugit earum praesentium voluptatibus animi sed amet itaque modi?
-            </p>
-        </section>
-        <section id="services">
-            <h1>Nos Prestations</h1>
-            <table>
-                <tr>
-                    <th>Nos Salades</th>
-                    <th>Nos Boissons</th>
-                    <th>Nos Oignons</th>
-                </tr>
-                <tr>
-                    <td>Salade du Chef</td>
-                    <td>Spitfire</td>
-                    <td>Oignons de chez Mamie</td>
-                </tr>
-                <tr>
-                    <td>La César</td>
-                    <td>Vodka bio</td>
-                    <td>Oignons frit</td>
-                </tr>
-                <tr>
-                    <td>Salade chevre chaud</td>
-                    <td>Sans alcool</td>
-                    <td>Oignons Rouge</td>
-                </tr>
-            </table>
-        </section>
-        <section id="contact">
-            <h1>Nous Contacter</h1>
-            <p>
-                <form action="#confirm" method="GET">
-                    <fieldset>
-                        <legend>Informations</legend>
-                        <label>Nom:
-                            <input type=" text" placeholder="Votre Nom">
-                        </label>
-                        <label>
-                            Prénom:
-                            <input type="text" placeholder="Voter Prénom">
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Messages</legend>
-                        <label>Sujet du message</label>
-                        <input type="text" placeholder="Sujet de votre message">
-                        <label >Votre Message</label>
-                        <textarea placeholder="Votre Message" cols="30" rows="10"></textarea>
-                    </fieldset>
-                    <button type="submit">Envoyer</button>
-                </form>
-            </p>
-        </section>
-        
-    </main>
+    
 
-    <footer>
-        <hr>
-        <p>
-            &copy; Akzel Axel -2019
-        </p>
-    </footer>
     
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
